@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="bg-slate-500 text-white p-6 mt-20">
       <div className="container mx-auto text-center">
         <p className="text-sm">
-          &copy; Hemil Patoliya. All rights reserved.
+          &copy; Silvertouch Technologies Ltd.. All rights reserved.
         </p>
       </div>
     </div>
