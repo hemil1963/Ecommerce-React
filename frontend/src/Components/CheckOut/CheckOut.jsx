@@ -75,9 +75,9 @@ const CheckOut = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="w-full max-w-4xl mx-auto p-4">
-        <h1 className="text-4xl font-extrabold mb-8 text-center text-purple-600">Address And Payment</h1>
+        <h1 className="text-4xl font-extrabold mb-8 text-center text-black">Payment Details</h1>
         <div className="flex flex-col lg:flex-row justify-between gap-8">
-          <div className="bg-purple-700 text-white shadow-md rounded-lg p-8 w-full lg:w-1/2">
+          <div className="bg-slate-500 text-white shadow-md rounded-lg p-8 w-full lg:w-1/2">
             <h2 className="text-2xl font-bold mb-6 text-center">Add Shipping Address</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -126,13 +126,13 @@ const CheckOut = () => {
               </div>
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-purple-600 text-white font-bold rounded-md hover:bg-purple-700 transition duration-300"
+                className="w-full px-6 py-3 bg-stone-400 text-white font-bold rounded-md hover:bg-stone-700 transition duration-300"
               >
                 Submit
               </button>
             </form>
           </div>
-          <div className="bg-purple-700 text-white shadow-md rounded-lg p-8 w-full lg:w-1/2 mt-4 lg:mt-0 text-center">
+          <div className="bg-slate-500 text-white shadow-md rounded-lg p-8 w-full lg:w-1/2 mt-4 lg:mt-0 text-center">
             <h2 className="text-2xl font-bold">Total Amount:</h2>
             <p className="text-4xl mt-2 mb-4">${totalAmount.toFixed(2)}</p>
             <h2 className="text-2xl font-bold">Payment Method:</h2>

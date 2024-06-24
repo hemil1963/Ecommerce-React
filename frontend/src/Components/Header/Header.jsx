@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Avatar } from '@material-ui/core';
 import { useSelector, useDispatch } from 'react-redux';
 import { logoutUser } from '../../Actions/User';
+import img from '../../../public/th.jpeg'
 
 const Header = () => {
     const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -13,11 +14,11 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-blue-900 text-white py-4">
+        <header className=" bg-slate-500 text-white py-4">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
                 <Link to="/" className="flex items-center space-x-2">
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" // Replace with your logo URL
+                        src={img} // Replace with your logo URL
                         alt="Logo"
                         className="h-8 w-8"
                     />
